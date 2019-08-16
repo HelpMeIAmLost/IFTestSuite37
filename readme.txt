@@ -61,13 +61,13 @@ Procedure
       py PrepareData.py <interface specification> <variant> [-d <DBC folder path>]
 
     Arguments:
-      interface specification : required, interface specification file from Subaru
+      interface specification : required, interface specification file
       variant                 : required, variant to test
       -d                      : optional, path of the DBC file and folder structure as described in the Requirements section, default is 'DBC/'
 
     Examples:
-      py PrepareData.py 【SASB連-2018-21】外部IF定義書_20181228リリース.xlsx GC7
-      py PrepareData.py 【SASB連-2018-21】外部IF定義書_20181228リリース.xlsx HR3 -d DBCs_are_here/
+      py PrepareData.py InterfaceSpecification.xlsx GC7
+      py PrepareData.py InterfaceSpecification.xlsx HR3 -d DBCs_are_here/
 
     Output:
       GlobalDeclarationsList.xlsx - a list of global variable declarations that will be used for testing
